@@ -12,7 +12,7 @@ const paths = [
 ];
 
 // Generate a single regular expression
-const regex = pathToRegexp(paths, [/*{name: 'brandId', prefix: "/", suffix: "", pattern: "123", modifier: "+"}*/]);
+const regex = pathToRegexp(paths);
 
 console.log(regex.test('/api/admin/brands/123/products/456'));
 console.log(regex.test('/api/admin/brands/321/products/456'));
